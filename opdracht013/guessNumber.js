@@ -2,13 +2,12 @@
 
 
 const userName = prompt( "Welkom! Wat is je naam?");
-console.log(userName);
 let userMin = prompt("Hey "+ userName + ", wij gaan eerst je getalenrange bepalen. Wat is het kleinste nummer?");
 let userMax = prompt("En nu de grootste getal dat jij wilt raden:");
 let min = parseInt(userMin);
 let max = parseInt(userMax);
 const getRandomIntInclusive = Math.floor(Math.random() * (max - min + 1) + min);
-console.log(getRandomIntInclusive);
+console.log("The number we've chosen is: " + getRandomIntInclusive);
 let attempts = 0;
 for (attempts = 1; attempts <= 5; attempts++ ){
     let restAttempts = 5 - attempts;
